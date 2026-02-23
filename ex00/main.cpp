@@ -6,7 +6,7 @@
 /*   By: kaisuzuk <kaisuzuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/23 11:46:59 by kaisuzuk          #+#    #+#             */
-/*   Updated: 2026/02/23 12:15:45 by kaisuzuk         ###   ########.fr       */
+/*   Updated: 2026/02/24 08:11:18 by kaisuzuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,5 +79,13 @@ int main( void ) {
 		std::cout << "i2 (expect) = " << &i2 << std::endl;
 		std::cout << "min(i1, i2) = " << &::min(i1, i2) << std::endl;
 		std::cout << "min(i1, i2) = " << &::max(i1, i2) << std::endl;
+	}
+
+	// error
+	{
+		int i = 42;
+		float f = 42.195f;
+
+		// std::cout << "min(f1, f2) = " << &::min(i, f);
 	}
 }
