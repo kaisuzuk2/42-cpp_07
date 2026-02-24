@@ -6,18 +6,21 @@
 /*   By: kaisuzuk <kaisuzuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 09:19:05 by kaisuzuk          #+#    #+#             */
-/*   Updated: 2026/02/24 09:36:21 by kaisuzuk         ###   ########.fr       */
+/*   Updated: 2026/02/24 11:46:00 by kaisuzuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
 
+#include <exception>
+
 template <typename T> 
 class Array {
 	private:
 		T *_data;
 		unsigned int _size;
+		void checkIndex(unsigned int) const;
 	public:
 		Array();
 		Array(unsigned int);
