@@ -6,14 +6,14 @@
 #    By: kaisuzuk <kaisuzuk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/24 08:23:48 by kaisuzuk          #+#    #+#              #
-#    Updated: 2026/02/24 08:35:11 by kaisuzuk         ###   ########.fr        #
+#    Updated: 2026/02/24 13:05:25 by kaisuzuk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 NAME	=	iter
 CXX		=	c++
-FLAG	=	-Wall -Werror -Wextra -std=c++98 
+FLAG	=	-Wall -Werror -Wextra -std=c++98
 
 SRCS	=	main.cpp
 OBJS	=	$(SRCS:%.cpp=%.o)

@@ -6,7 +6,7 @@
 /*   By: kaisuzuk <kaisuzuk@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/24 11:49:28 by kaisuzuk          #+#    #+#             */
-/*   Updated: 2026/02/24 13:02:23 by kaisuzuk         ###   ########.fr       */
+/*   Updated: 2026/02/26 08:21:33 by kaisuzuk         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,10 @@ int main(int, char**)
 		header(0, "42main test");
 		Array<int> numbers(MAX_VAL);
 		int* mirror = new int[MAX_VAL];
-		srand(time(NULL));
+		std::srand(time(NULL));
 		for (int i = 0; i < MAX_VAL; i++)
 		{
-			const int value = rand();
+			const int value = std::rand();
 			numbers[i] = value;
 			mirror[i] = value;
 		}
@@ -78,7 +78,7 @@ int main(int, char**)
 
 		for (int i = 0; i < MAX_VAL; i++)
 		{
-			numbers[i] = rand();
+			numbers[i] = std::rand();
 		}
 		delete [] mirror;//
 	}
@@ -109,9 +109,9 @@ int main(int, char**)
 	{
 		header(3, "Copy constructor");
 		Array<int> arrA(10);
-		srand(time(0));
+		std::srand(time(0));
 		for (unsigned int i = 0; i < arrA.size(); i++)
-			arrA[i] = rand() % 10;
+			arrA[i] = std::rand() % 10;
 		Array<int> arrB(arrA);
 		std::cout << "arrA: ";
 		printArr(arrA);
@@ -131,9 +131,9 @@ int main(int, char**)
 	{
 		header(4, "Copy assignment");
 		Array<int> arrA(10);
-		srand(time(0));
+		std::srand(time(0));
 		for (unsigned int i = 0; i < arrA.size(); i++)
-			arrA[i] = rand() % 10;
+			arrA[i] = std::rand() % 10;
 		Array<int> arrB(10);
 		std::cout << "*** init" << std::endl;
 		std::cout << "arrA: ";

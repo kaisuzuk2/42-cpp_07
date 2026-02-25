@@ -6,13 +6,13 @@
 #    By: kaisuzuk <kaisuzuk@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/02/24 11:51:09 by kaisuzuk          #+#    #+#              #
-#    Updated: 2026/02/24 11:51:18 by kaisuzuk         ###   ########.fr        #
+#    Updated: 2026/02/24 13:06:02 by kaisuzuk         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	array
 CXX		=	c++
-FLAG	=	-Wall -Werror -Wextra -std=c++98 
+FLAG	=	-Wall -Werror -Wextra -std=c++98
 
 SRCS	=	main.cpp
 OBJS	=	$(SRCS:%.cpp=%.o)
